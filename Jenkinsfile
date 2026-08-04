@@ -6,13 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('git checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/harrydcdark/Gitboard.git'
-            }
-        }
-        
-        stage('maven compile') {
+         stage('maven compile') {
             steps {
                 sh 'mvn compile'
             }

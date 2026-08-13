@@ -13,12 +13,12 @@ pipeline {
         }
         stage('maven test') {
             steps {
-                sh 'mvn test'
+                sh 'mvn test' // create unity test / testcases
             }
         }
         stage('maven package') {
             steps {
-                sh 'mvn package'
+                sh 'mvn package' // creating build 
             }
         }
     }
